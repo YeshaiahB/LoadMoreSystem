@@ -12,7 +12,7 @@ function StartSystem(TargetName, ImageAmmount){
                 const newItem = document.createElement('div');
                 const newImage = document.createElement('img');
 
-                const ImageURl = '/Images/' + TargetName + "/img" + itemsLoaded + ".png"
+                const ImageURl = 'Images/' + TargetName + "/img" + itemsLoaded + ".png"
                 newItem.className = 'content-item';
                 newImage.setAttribute('src', ImageURl);
                 newItem.appendChild(newImage);
