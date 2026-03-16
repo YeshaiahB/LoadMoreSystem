@@ -18,9 +18,9 @@ function StartSystem(TargetName, ImageAmmount){
                 newItem.appendChild(newImage);
                 contentContainer.appendChild(newItem);
 
-                // newImage.addEventListener('click', function(){
-                //     window.open(ImageURl)
-                // })
+                newImage.addEventListener('click', function(){
+                    window.open(ImageURl)
+                })
             }
         } else {
             loadMoreButton.style.display = 'none';
