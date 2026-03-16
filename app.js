@@ -1,6 +1,4 @@
-
-
-document.addEventListener("DOMContentLoaded", function(){
+function StartSystem(TargetName){
     const loadMoreButton = document.querySelector('#load-more');
     const contentContainer = document.querySelector('.content-container');
     let itemsLoaded = 3; 
@@ -14,13 +12,18 @@ document.addEventListener("DOMContentLoaded", function(){
                 const newItem = document.createElement('div');
                 const newImage = document.createElement('img');
 
+                const ImageURl = '/Images/' + TargetName + "/img" + itemsLoaded + ".png"
                 newItem.className = 'content-item';
-                newImage.setAttribute('src', 'Images/img' + itemsLoaded + ".png");
+                newImage.setAttribute('src', ImageURl);
                 newItem.appendChild(newImage);
                 contentContainer.appendChild(newItem);
+
+                newImage.addEventListener('click', function(){
+                    window.open(ImageURl)
+                })
             }
         } else {
             loadMoreButton.style.display = 'none';
         }
     })
-})
+}

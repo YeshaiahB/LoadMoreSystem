@@ -17,7 +17,7 @@ body {
 .content-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border: 2px solid #fff
 }
 
@@ -32,4 +32,21 @@ body {
 
 #load-more:hover {
     background-color: #222;
+}
+
+.Buttons {
+    padding: 15px 35px;
+    background-color: #111;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.Buttons:hover {
+    background-color: #222;
+    border: 1px solid white;
+    transition: 0.5s;
 }
